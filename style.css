@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Cairo:wght@200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #f0ede5;
+}
+nav {
+    background: #312f2c;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding: 10px 6px;
+    height: 70px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    font-family: "Badeen Display", system-ui;
+    font-weight: 100;
+}
+.logo {
+    color: #f0ede5;
+    margin: 6px 10px;
+}
+nav ul {
+    display : flex;
+    gap : 30px;
+    align-items : center;
+}
+nav ul li {
+    list-style : none;
+    margin: 6px 10px;
+    transition : all .5s ease;
+}
+nav ul li a {
+    text-decoration : none;
+    color: #f0ede5;
+    transition : all .3s ease;
+}
+nav ul li a:hover {
+    border-bottom : 1.5px #f0ede5 solid;
+}
+nav .hum {
+    display : none;
+}
+nav .hum i {
+    color: #f0ede5;
+    font-size: 40px;
+    background: #3b3b36;
+    border-radius: 10px;
+}
+@media(max-width : 600px){
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction : column;
+        text-align : center;
+        background: #312f2c;
+        gap : 0;
+        overflow : hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    nav ul li {
+        padding: 20px;
+        padding-top: 0;
+        width: 80%;
+        vertical-align : center;
+        border-radius: 15px;
+    }
+    .hum {
+        display : block !important;
+    }
+    #menu {
+        transition : all .5s ease;
+    }
+}
